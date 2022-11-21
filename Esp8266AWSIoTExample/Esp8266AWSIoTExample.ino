@@ -126,6 +126,9 @@ void setup() {
   // get current time, otherwise certificates are flagged as expired
   sntp_stop(); //speeds up the connection with UDP servers
   sntp_init();// speeds up the connection with UDP servers
+  
+  sntp_stop(); //speeds up the connection with UDP servers
+  sntp_init();// speeds up the connection with UDP servers
   setCurrentTime();
 
   wiFiClient.setClientRSACert(&client_crt, &client_key);
